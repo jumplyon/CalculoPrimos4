@@ -1,10 +1,10 @@
-class CalculoPrimos4 extends Thread{
+class CalculoPrimo4 extends Thread{
     private int inicio, fim;
 
-    public CalculoPrimos4( int inicio, int fim) {
+    public CalculoPrimo4( int inicio, int fim) {
         this.inicio = inicio;
         this.fim = fim;
-
+    }
         private boolean isprime(int n) {
             if (n < 2) return false;
             for( int i =2; i <= Math.sqrt(n); i++) {
@@ -17,12 +17,11 @@ class CalculoPrimos4 extends Thread{
          public void run() {
             System.out.println("[" + inicio + "-" + fim + "]" + "Primos encontrados: ");
             for ( int i = inicio; i<= fim; i++) {
-                isprime(i){
+               if (isprime(i)) {
                     System.out.print(i + " ");
                 }
 
             }
         }
 
-    }
 }
