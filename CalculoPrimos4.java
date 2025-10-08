@@ -25,3 +25,19 @@ class CalculoPrimo4 extends Thread{
         }
 
 }
+public class CalculoPrimos4 {
+    public static void main(String[] args) {
+        int inicio = 5;
+        int fim = 150;
+        int parada1 = 5 * 10;
+        int parada2 = 5 * 20;
+
+        Thread t1 = new CalculoPrimo4(inicio, parada1);
+        Thread t2 = new CalculoPrimo4(parada1 + 1, parada2);
+        Thread t3 = new CalculoPrimo4(parada2 + 1, fim);
+
+        t1.start();
+        t2.start();
+        t3.start();
+    }
+}
