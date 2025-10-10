@@ -25,18 +25,21 @@ class CalculoPrimo implements Runnable {
     }
 
 }
-public class CalculoPrimos4 {
+public class CalculoPrimoRunnable {
     public static void main(String[] args) {
         int inicio = 5;
         int fim = 150;
         int parada1 = 5 * 10;
         int parada2 = 5 * 20;
 
-        Runn
 
-        Thread t1 = new CalculoPrimo4(inicio, parada1);
-        Thread t2 = new CalculoPrimo4(parada1 + 1, parada2);
-        Thread t3 = new CalculoPrimo4(parada2 + 1, fim);
+        Runnable r1 = new CalculoPrimo(inicio, parada1);
+        Runnable r2 = new CalculoPrimo(parada1 +1, parada2);
+        Runnable r3 = new CalculoPrimo(parada2, fim);
+
+        Thread t1 = new Thread(r1);
+        Thread t2 = new Thread(r2);
+        Thread t3 = new Thread(r3);
 
         t1.start();
         t2.start();
