@@ -1,3 +1,5 @@
+package src;
+
 class CalculoPrimo4 extends Thread{
     private int inicio, fim;
 
