@@ -1,6 +1,6 @@
 # 🧮 Calculadora de Números Primos com Threads em Java
 
-## 📝 Descrição
+## 📝 Descrição:
 
 Este projeto é uma aplicação de console em **Java** desenvolvida para calcular números primos dentro de um intervalo numérico de forma otimizada.
 A principal característica é o uso de **multithreading** para dividir a carga de processamento, permitindo que a verificação dos números seja executada em paralelo — o que melhora significativamente a performance em comparação com uma abordagem de thread única.
