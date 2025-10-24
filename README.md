@@ -12,7 +12,7 @@ O repositório demonstra duas abordagens para a criação de threads em Java:
 
 ---
 
-## ✨ Funcionalidades:
+## ✨ Funcionalidades
 
 * **Cálculo de Números Primos:** Verifica e exibe todos os números primos em um intervalo pré-definido.
 * **Processamento Paralelo:** Utiliza três threads para dividir o intervalo de busca e processar os números de forma concorrente.
